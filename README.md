@@ -106,3 +106,11 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Hat tip to anyone whose code was used
 * Inspiration
 * etc
+
+
+The Welcome Index page was modeled after:
+![Alt text](./public/github_welcome_index.png?raw=true "GitHub's Welcome Index Page")
+
+The User Show page was modeled after:
+![Alt text](./public/github_users_show_01.png?raw=true "GitHub's Welcome Index Page")
+![Alt text](./public/github_users_show_02.png?raw=true "GitHub's Welcome Index Page")
