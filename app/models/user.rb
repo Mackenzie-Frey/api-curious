@@ -8,7 +8,7 @@ class User < ApplicationRecord
   end
 
   def self.find_by_uid(id_from_auth)
-    where(uid: id_from_auth)
+    find_by(uid: id_from_auth)
   end
 
 end
