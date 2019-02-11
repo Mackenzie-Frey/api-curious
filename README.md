@@ -28,6 +28,12 @@ $ rails db:create
 $ rails db:migrate
 ```
 
+Sign up on github for a key. Adds this to your config/application.yml file.
+```
+OMNIAUTH_GITHUB_KEY: "<insert key here>"
+OMNIAUTH_GITHUB_SECRET: "<insert secret here>"
+```
+
 A step by step series of examples that tell you how to get a development env running
 
 
