@@ -35,6 +35,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faraday'
 gem 'bootstrap-sass'
+gem 'bootstrap'
+gem 'jquery-rails'
 gem 'figaro'
 gem 'omniauth-github'
 
