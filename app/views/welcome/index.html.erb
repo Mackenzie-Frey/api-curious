@@ -33,5 +33,12 @@
     </form>
   </div>
 </nav>
+GitHub Welcome Page
 
-GitHub
+<% if current_user %>
+  <%= "Welcome #{current_user.name}" %>
+  <%= button_to "Sign Out", signout_path, :method => :get %>
+<% else %>
+  <%= button_to "Sign In With GitHub", "/auth/github" %>
+<% end %>
+>>>>>>> 23a710a9b1965fc0b10cac25e14777c99c35a5a8
