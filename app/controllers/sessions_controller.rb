@@ -3,7 +3,9 @@ class SessionsController < ApplicationController
     auth = request.env["omniauth.auth"]
     user = User.find_by_uid(auth["uid"]) || User.create_with_omniauth(auth)
     session[:user_id] = user.uid
-binding.pry
+    session[:token] = user.token
+    user.token = auth["credentials"]["token"]
+    user.save!
     redirect_to user_path(user), :notice => "Signed in!"
   end
 
