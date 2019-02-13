@@ -95,4 +95,13 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+
+  def stub_omniauth
+    OmniAuth.config.test_mode = true
+    # then, provide a set of fake oauth data that
+    # omniauth will use when a user tries to authenticate:
+    OmniAuth.config.mock_auth[:github] = OmniAuth::AuthHash.new({
+
+    })
+  end
 end
