@@ -2,7 +2,6 @@ class GithubService
 
   def initialize(user)
     @token = user.token
-    binding.pry
   end
 
   def conn
