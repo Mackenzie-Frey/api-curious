@@ -12,9 +12,11 @@ end
 describe 'As a user to users/show' do
   it 'Sees user show page' do
     user = FactoryBot.create(:user)
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
     # profile pic, number of starred repos, followers, following
     # profile_pic { 'https://avatars0.githubusercontent.com/u/42525195?v=4' }
     # number_of_starred_repos { 7 }
+
     visit user_path(user)
 
     expect(page).to have_content("GitHub")
